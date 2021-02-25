@@ -13,6 +13,8 @@ for(int i=0; i<n; i++)
 {  
    
 arr[i]=sc.nextInt();  
+if (arr[i]<0){
+    System.out.println(" invalid input");}
 }
 System.out.println(" the number you entered are: ");
 for(int i =0; i<n;i++){
@@ -20,11 +22,17 @@ for(int i =0; i<n;i++){
 }
 System.out.println("Enter the element you want to know the count");
 int num=sc.nextInt();  
+
 for (int i=0;i<n;i++){
-       if(arr[i]==num)
+       if(arr[i]==num && arr[i]>0)
        count++;
   
 }
-System.out.println("the count of the number is:" +num +" " + count);
+if(count==0 ){
+    System.out.println(" The number is not present in the array you have entered.");
+}
+else{
+System.out.println("the count of the number " +num +" is : " + count);
+}
     }
 }
