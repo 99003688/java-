@@ -14,9 +14,10 @@ public class Fact {
     
       if (a>0){
             while(a>0){
+              fact=1;
               ind=a%10;
 
-               for(int i=1; i<=a;i++){
+               for(int i=1; i<=ind;i++){
              fact=fact*i;
            
       }
