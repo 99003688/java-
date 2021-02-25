@@ -22,11 +22,11 @@ public class Employee
         this.address = newAddress;
 
     }
-    public String getNumber()
+    public int getNumber()
     {
     return number;
     }
-    public void setNumber(String newNumber) 
+    public void setNumber(int newNumber) 
     {
         this.number = newNumber;
 
